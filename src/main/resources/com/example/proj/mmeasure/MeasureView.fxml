@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proj.measuree.MeasureController">
+   <children>
+      <Label layoutX="239.0" layoutY="30.0" text="Measurements">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="97.0" text="Mobile No" />
+      <TextField fx:id="mobile" layoutX="80.0" layoutY="94.0" />
+      <Line endX="170.66668701171875" endY="-7.62939453125E-6" layoutX="314.0" layoutY="64.0" startX="-199.66665649414062" startY="-7.62939453125E-6" />
+      <Line endX="3.66668701171875" endY="-3.814697265625E-6" layoutX="480.0" layoutY="43.0" startX="-100.0" />
+      <Line endX="3.66668701171875" endY="-3.814697265625E-6" layoutX="215.0" layoutY="43.0" startX="-100.0" />
+      <Label layoutX="376.0" layoutY="97.0" text="Dress" />
+      <Label layoutX="22.0" layoutY="132.0" text="Dlvry Date" />
+      <TextField fx:id="bill" layoutX="409.0" layoutY="198.0" />
+      <TextField fx:id="price" layoutX="80.0" layoutY="198.0" />
+      <TextArea fx:id="mesr" layoutX="70.0" layoutY="278.0" prefHeight="122.0" prefWidth="459.0" />
+      <Label layoutX="383.0" layoutY="202.0" text="Bill" />
+      <Label layoutX="22.0" layoutY="202.0" text="PrcPerUnit" />
+      <Label layoutX="27.0" layoutY="169.0" text="Quantity" />
+      <DatePicker fx:id="date" layoutX="80.0" layoutY="129.0" prefHeight="25.0" prefWidth="149.0" />
+      <ComboBox fx:id="dress" editable="true" layoutX="409.0" layoutY="94.0" onAction="#dodress" prefWidth="150.0" />
+      <Label layoutX="76.0" layoutY="414.0" text="Workers">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="worker" editable="true" layoutX="144.0" layoutY="409.0" prefWidth="150.0" />
+      <Label layoutX="376.0" layoutY="132.0" text="Email" />
+      <TextField fx:id="email" layoutX="409.0" layoutY="129.0" onAction="#domail" />
+      <Label layoutX="76.0" layoutY="250.0" text="Measurements">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="169.0" text="&lt;---   Design" />
+      <Button layoutX="474.0" layoutY="165.0" mnemonicParsing="false" onAction="#doupload" text="Upload" />
+      <ComboBox fx:id="quantity" editable="true" layoutX="80.0" layoutY="165.0" prefWidth="150.0" />
+      <Button layoutX="445.0" layoutY="247.0" mnemonicParsing="false" onAction="#doexisting" text="Exixting" />
+      <Button layoutX="371.0" layoutY="409.0" mnemonicParsing="false" onAction="#donew" prefHeight="25.0" prefWidth="55.0" text="New" />
+      <Button layoutX="453.0" layoutY="409.0" mnemonicParsing="false" onAction="#dosave" prefHeight="25.0" prefWidth="55.0" text="Save" />
+      <Button layoutX="371.0" layoutY="445.0" mnemonicParsing="false" onAction="#doupdate" text="Update" />
+      <Button layoutX="454.0" layoutY="445.0" mnemonicParsing="false" onAction="#doclose" prefHeight="25.0" prefWidth="55.0" text="Close" />
+      <ImageView fx:id="pic" fitHeight="202.0" fitWidth="138.0" layoutX="234.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@design.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="448.0" text="Order Id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="order" layoutX="145.0" layoutY="445.0" onAction="#doorder" prefHeight="25.0" prefWidth="69.0" />
+      <Button layoutX="225.0" layoutY="445.0" mnemonicParsing="false" onAction="#dosend" prefHeight="25.0" prefWidth="69.0" text="Send Mail" />
+   </children>
+</AnchorPane>

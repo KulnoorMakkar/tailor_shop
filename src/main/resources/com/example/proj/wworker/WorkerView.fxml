@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-border-width: 10; -fx-border-color: #CCF896; -fx-background-color: #EAFBD5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proj.workerr.WorkerController">
+   <children>
+      <CubicCurve controlX1="-44.666656494140625" controlX2="46.000030517578125" controlY1="-123.66667175292969" controlY2="121.66667175292969" endX="193.33331298828125" endY="-7.62939453125E-6" fill="#ccf896" layoutX="303.0" layoutY="75.0" startX="-186.6666717529297" startY="-7.62939453125E-6" stroke="BLACK" />
+      <Label layoutX="159.0" layoutY="81.0" text="Worker's">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="38.0" text="Console">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="154.0" text="Worker's Name">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="211.0" text="Address">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="265.0" text="Mobile Number">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="321.0" text="Specialization">
+         <font>
+            <Font name="System Italic" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="spec" layoutX="404.0" layoutY="194.0" onMouseClicked="#doselect" prefHeight="139.0" prefWidth="149.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="wname" layoutX="208.0" layoutY="154.0" prefWidth="149.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="address" layoutX="208.0" layoutY="211.0" prefWidth="149.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="mobile" layoutX="208.0" layoutY="265.0" prefWidth="149.0" style="-fx-background-radius: 15;" />
+      <TextField fx:id="splz" layoutX="208.0" layoutY="321.0" prefWidth="149.0" style="-fx-background-radius: 15;" />
+      <Line endX="180.6666259765625" layoutX="357.0" layoutY="390.0" startX="-284.6666564941406" />
+      <Button layoutX="268.0" layoutY="419.0" mnemonicParsing="false" onAction="#dosave" prefHeight="29.0" prefWidth="77.0" style="-fx-background-color: #BFEC89;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="446.0" layoutY="419.0" mnemonicParsing="false" onAction="#dodelete" prefHeight="29.0" prefWidth="77.0" style="-fx-background-color: #BFEC89;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="77.0" layoutY="419.0" mnemonicParsing="false" onAction="#donew" prefHeight="29.0" prefWidth="77.0" style="-fx-background-color: #BFEC89;" text="New">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Line endX="-10.999969482421875" endY="3.0517578125E-5" layoutX="266.0" layoutY="433.0" startX="-100.0" />
+      <Line endX="-10.999969482421875" endY="3.0517578125E-5" layoutX="450.0" layoutY="433.0" startX="-100.0" />
+      <Label layoutX="212.0" layoutY="372.0" text="Double click to select the specialization" />
+      <Button layoutX="421.0" layoutY="151.0" mnemonicParsing="false" onAction="#dospecial" prefHeight="29.0" prefWidth="116.0" style="-fx-background-color: #BFEC89;" text="Specialization">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
